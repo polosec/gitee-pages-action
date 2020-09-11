@@ -20,11 +20,11 @@ jobs:
           destination-repo: "git@gitee.com:polosec/polosec.git"
 
     - name: Build Gitee Pages
-      uses: polosec/polosec@master
+      uses: yanglbme/gitee-pages-action@master
       with:
           # 注意替换为你的 Gitee 用户名
-          gitee-username: 15668170791
+          gitee-username: polosec
           # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
           # 注意替换为你的 Gitee 仓库
-          gitee-repo: polosec/polosec
+          gitee-repo: polosec
